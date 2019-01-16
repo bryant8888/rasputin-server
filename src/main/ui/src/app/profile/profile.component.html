@@ -1,0 +1,26 @@
+<div class="col-12 px-0 position-absolute header-wrapper">
+  <div class="container-fluid px-0">
+    <app-header></app-header>
+  </div>
+</div>
+<div class="col-12 px-0 profile-background pt-5">
+  <div class="col-lg-10 mx-auto col-md-12 pt-5">
+    <rasputin-paper>
+      <p>
+        Кнопки переключатели:
+
+        <button><a [routerLink]="['./stats']">stats</a></button>
+        <button><a [routerLink]="['./campaigns']">campaigns</a></button>
+        <button><a [routerLink]="['./countries']">countries</a></button>
+        <a [routerLink]="['./members']">members</a>
+        <a [routerLink]="['./referals']">referals</a>
+        <a [routerLink]="['./models']">models</a>
+        <a [routerLink]="['./referal-campaigns']">referal-campaigns</a>
+      </p>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </rasputin-paper>
+  </div>
+</div>
+
